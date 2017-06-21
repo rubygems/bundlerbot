@@ -1,0 +1,23 @@
+{
+  "name": "bundler-bot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a probot to help the bundler team",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/probot run"
+  },
+  "keywords": [
+    "probot",
+    "bot",
+    "bundler"
+  ],
+  "author": "Colby Swandale <colby@taplaboratories.com>",
+  "license": "MIT",
+  "dependencies": {
+    "probot": "^0.7.1"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.8.3"
+  }
+}
