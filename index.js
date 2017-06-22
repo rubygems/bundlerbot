@@ -7,7 +7,7 @@ module.exports = robot => {
     const github = await robot.auth(event.payload.installation.id);
     const pr_author = event.payload.pull_request.user.login;
 
-    if (await userHasBeenWelcomed(pr_author)) {
+    if (await userHasBeenWelcomed(pr_author))
       return;
 
     robot.log("handling open pull request: ", event.payload.number);
