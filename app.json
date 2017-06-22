@@ -1,0 +1,23 @@
+{
+  "name": "bundlerbot",
+  "description": "A bot that loves to help out",
+  "keywords": ["PRobot", "bundler", "node"],
+  "repository": "https://github.com/bundler/bundlerbot",
+  "logo": "https://avatars1.githubusercontent.com/in/3230?v=3&u=3e05220f68872012d3342e9967262fc4c678b6f2&s=120",
+  "env": {
+    "PRIVATE_KEY": {
+      "description": "the private key you downloaded when creating the GitHub App"
+    },
+    "APP_ID": {
+      "description": "the ID of your GitHub App"
+    },
+    "WEBHOOK_SECRET": {
+      "description": "the secret configured for your GitHub App"
+    },
+    "LOG_LEVEL": {
+      "required": false,
+      "value": "info",
+      "description": "trace, debug, info, warn, error, or fatal; default: info"
+    }
+  }
+}
