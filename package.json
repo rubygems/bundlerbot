@@ -5,7 +5,7 @@
   "description": "a probot to help the bundler team",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/probot run"
+    "start": "probot run ./index.js"
   },
   "keywords": [
     "probot",
@@ -20,5 +20,9 @@
   },
   "devDependencies": {
     "localtunnel": "^1.8.3"
+  },
+  "engines": {
+    "node": "^7.7",
+    "npm": "^4.0"
   }
 }
