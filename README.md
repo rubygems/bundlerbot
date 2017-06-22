@@ -16,7 +16,7 @@ Once you have setup the integration you are able to run probot. You will need to
 
 To start probot use the following command, replace the placeholders with the relevent information from the integration you have setup.
 
-````
+```
 probot run --port <port> --app <appid> -P <private-key> --secret <webhook-secret> -t <localtunnel.me-url> ./index.js
 ```
 
