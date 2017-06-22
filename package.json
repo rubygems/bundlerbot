@@ -15,7 +15,8 @@
   "author": "Colby Swandale <colby@taplaboratories.com>",
   "license": "MIT",
   "dependencies": {
-    "probot": "^0.7.1"
+    "probot": "^0.7.1",
+    "redis": "^2.7.1"
   },
   "devDependencies": {
     "localtunnel": "^1.8.3"
