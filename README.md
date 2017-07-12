@@ -6,15 +6,15 @@ Bundlerbot is a small node script using the [probot](https://github.com/probot/p
 * node 8.1.2
 
 ## Development
-Bundlerbot interacts with Github using [Github Apps](https://developer.github.com/apps/), when developing bundlerbot on a local machine you will need to setup a new integration. Refer to the [Githul documentation](https://developer.github.com/apps/building-integrations/setting-up-a-new-integration/) for more info.
+Bundlerbot interacts with Github using [Github Apps](https://developer.github.com/apps/), when developing bundlerbot on a local machine you will need to setup a new integration. Refer to the [Github documentation](https://developer.github.com/apps/building-integrations/setting-up-a-new-integration/) for more information.
 
-Note: It's recommend to create the integration on your Github own account and create a new repository to test on.
+Note: It's recommend to create the integration on your own Github account and create a new repository to test on.
 
-Probot uses localtunnel.me to allow Github to make requests to bundlerbot running on your local machine. Generate a random 16 char string and use `<random-string>.localtunnel.me` as the webook url.
+Probot uses `localtunnel.me`, which allows Github to make requests to bundlerbot running on your local machine. Generate a random 16 char string and use `<random-string>.localtunnel.me` as the webook url.
 
-Once you have setup the integration you are able to run probot. You will need to record the app id, webhook secret and the private key.
+Once you have setup the integration you will need to record the app id, webhook secret and the private key.
 
-To start probot use the following command, replace the placeholders with the relevent information from the integration you have setup.
+To start probot use the following command but replace the placeholders with the relevent information from the integration you have setup.
 
 ```
 probot run --port <port> --app <appid> -P <private-key> --secret <webhook-secret> -t <localtunnel.me-url> ./index.js
